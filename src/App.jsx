@@ -17,10 +17,10 @@ function App() {
         <Header />
         <div className="appMain">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/quem-somos" element={<QuemSomos />} />
-            <Route path="/servicos" element={<Servicos />} />
-            <Route path="/contato" element={<Contato />} />
+            <Route path="/lash-designer/" element={<Home />} />
+            <Route path="/lash-designer/quem-somos" element={<QuemSomos />} />
+            <Route path="/lash-designer/servicos" element={<Servicos />} />
+            <Route path="/lash-designer/contato" element={<Contato />} />
           </Routes>
         </div>
         <Footer />

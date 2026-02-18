@@ -25,10 +25,10 @@ export const siteData = {
 
   // Navegação
   nav: [
-    { label: 'Início', path: '/' },
-    { label: 'Quem Somos', path: '/quem-somos' },
-    { label: 'Serviços', path: '/servicos' },
-    { label: 'Contato', path: '/contato' },
+    { label: 'Início', path: '/lash-designer/' },
+    { label: 'Quem Somos', path: '/lash-designer/quem-somos' },
+    { label: 'Serviços', path: '/lash-designer/servicos' },
+    { label: 'Contato', path: '/lash-designer/contato' },
   ],
 
   // Home - Hero / Banner
