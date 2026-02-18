@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: lashdesigner-web
+    restart: unless-stopped
+    networks:
+      - app-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.lashdesigner-rmti.entrypoints=https"
+      - "traefik.http.routers.lashdesigner-rmti.rule=Host(`lashdesigner.rmti.com.br`)"
+      - "traefik.http.routers.lashdesigner-rmti.tls=true"
+      - "traefik.http.services.lashdesigner-rmti.loadbalancer.server.port=80"
+      - "traefik.docker.network=app-network"
+
+networks:
+  app-network:
+    external: true

@@ -1,0 +1,69 @@
+/* ============================================
+   Lash Designer - Estilos globais
+   Paleta: rosinha claro, branco, tons suaves
+   ============================================ */
+
+:root {
+  /* Cores principais */
+  --color-primary: #c994a8;
+  --color-primary-dark: #a86b82;
+  --color-primary-light: #e8b4c8;
+  --color-bg-soft: #fdf5f8;
+  --color-hero: #f8e4ec;
+  --color-footer: #f5e6ec;
+  --color-text: #4a3f45;
+  --color-text-muted: #6b5d64;
+
+  /* Tipografia */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Transições */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* Remover estilos de lista onde usamos list-style: none nos módulos */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}

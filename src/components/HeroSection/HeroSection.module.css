@@ -1,0 +1,73 @@
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1.5rem 4rem;
+  background: linear-gradient(160deg, var(--color-bg-soft) 0%, var(--color-hero) 50%, rgba(255, 240, 245, 0.9) 100%);
+  overflow: hidden;
+}
+
+.hero.hasBgImage {
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 248, 250, 0.85) 100%);
+  pointer-events: none;
+}
+
+.hero.hasBgImage .overlay {
+  background: linear-gradient(180deg, rgba(255, 248, 250, 0.75) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0 0 2rem;
+  opacity: 0.95;
+}
+
+.cta {
+  margin-top: 1.5rem;
+}
+
+.whatsappCta {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  min-width: 220px;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 50vh;
+    padding: 5rem 1rem 3rem;
+  }
+
+  .whatsappCta {
+    width: 100%;
+    max-width: 280px;
+  }
+}

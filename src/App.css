@@ -1,0 +1,11 @@
+/* Layout geral: sticky header + main + footer */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appMain {
+  flex: 1;
+  padding-top: 0;
+}
