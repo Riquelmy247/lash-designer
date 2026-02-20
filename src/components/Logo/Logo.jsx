@@ -11,7 +11,7 @@ export default function Logo() {
   const isSvg = logo?.toLowerCase().endsWith('.svg')
 
   return (
-    <Link to="/" className={styles.logo} aria-label={`${name} - início`}>
+    <Link to="/lash-designer/" className={styles.logo} aria-label={`${name} - início`}>
       {isSvg || logo?.match(/\.(png|jpg|jpeg|gif|webp)$/i) ? (
         <img src={logo} alt={logoAlt || name} className={styles.logoImage} />
       ) : (

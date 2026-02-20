@@ -8,7 +8,7 @@ export const siteData = {
   brand: {
     name: 'Lash Designer',
     tagline: 'Beleza que realça seu olhar',
-    logo: '/logo.svg',
+    logo: './logo.svg',
     logoAlt: 'Logo Lash Designer',
   },
 
@@ -37,7 +37,7 @@ export const siteData = {
     subtitle: 'Extensão de cílios, design de sobrancelhas e tratamentos que valorizam sua beleza natural.',
     ctaText: 'Agende pelo WhatsApp',
     ctaWhatsApp: true,
-    backgroundImage: '/hero-bg.jpg', // Opcional: coloque uma imagem em /public
+    // backgroundImage: './logo.svg',
   },
 
   // Quem Somos
@@ -132,7 +132,7 @@ export const siteData = {
 
   // Footer
   footer: {
-    copyright: '© ' + new Date().getFullYear() + ' Lash Designer. Desenvolvido por Riquelmy M.',
+    copyright: '© ' + new Date().getFullYear() + ' Lash Designer. Todos os direitos reservados. Desenvolvido por @riquelmy_2612.',
     madeWith: 'Feito com carinho para realçar seu olhar.',
   },
 }
